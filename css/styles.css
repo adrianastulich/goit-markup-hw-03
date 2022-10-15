@@ -4,11 +4,15 @@
   --text-color: #757575;
   --logo-color: #000000;
   --border-color: #ececec;
+  --second-border-color: #eeeeee;
   --brand-text-color: #212121;
   --main-background-color: #2f303a;
   --subsection-background-color: #f5f4fa;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --shadow-color: rgba(0, 0, 0, 0.25);
+  --second-shadow-color: rgba(0, 0, 0, 0.12);
+  --third-shadow-color: rgba(0, 0, 0, 0.14);
+  --forth-shadow-color: rgba(0, 0, 0, 0.2);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -20,7 +24,8 @@ li,
 a,
 nav,
 h1,
-h2 {
+h2,
+p {
   padding: 0;
   margin: 0;
 }
@@ -38,7 +43,7 @@ h2 {
   align-items: center;
   padding-left: 13.44%;
   padding-right: 14.19%;
-  border-bottom: 1px var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header-logo {
@@ -50,6 +55,8 @@ h2 {
   line-height: 2rem;
   letter-spacing: 0.03em;
   margin-right: 5.69%;
+  margin-top: 18px;
+  margin-bottom: 18.75px;
   width: auto;
 }
 .dark-text {
@@ -57,7 +64,6 @@ h2 {
 }
 nav {
   width: 190.5px;
-  display: flex;
 }
 .headermenu {
   display: flex;
@@ -112,6 +118,8 @@ nav {
   color: var(--active-color);
 }
 /* end of header */
+
+/* start of studio */
 .main-div {
   background-color: var(--main-background-color);
   height: 450px;
@@ -198,42 +206,65 @@ nav {
   background: var(--subsection-background-color);
 }
 .ourteam-card {
+  margin: 0;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
+  justify-content: center;
+}
+.card-description {
+  background-color: var(--brand-color);
+  padding-top: 22.5px;
+  padding-bottom: 22.5px;
+  box-shadow: 0px 1px 3px var(--second-shadow-color),
+    0px 1px 1px var(--third-shadow-color), 0px 2px 1px var(--forth-shadow-color);
+  border-radius: 0px 0px 4px 4px;
 }
 .ourteam-list {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22.5px;
 }
 .name {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.188rem;
-  /* text-align: center; */
+  font-size: 12px;
+  line-height: 0.875rem;
+  text-align: center;
   letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 7.5px;
 }
 .work-position {
-  font-size: 16px;
-  line-height: 1.188rem;
-  /* text-align: center; */
+  font-size: 12px;
+  line-height: 0.875rem;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin: 0;
 }
+/* end of studio */
 
-.portfolio-menu {
-  margin-top: 94px;
+/* start of portfolio */
+.main-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
-
 .mainportfolio-button {
   font-family: inherit;
   cursor: pointer;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.625rem;
   text-align: center;
   letter-spacing: 0.03em;
   background: var(--subsection-background-color);
   border-style: none;
   border-radius: 4px;
+  padding: 4.5px 16.5px;
+  margin-bottom: 37.5px;
 }
 .mainportfolio-button:hover,
 .mainportfolio-button:focus {
@@ -244,41 +275,96 @@ nav {
 
 .portfolio-list {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 22.5px;
+  max-width: 877.5px;
+  margin: 0 auto;
 }
 .portfolio-name {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2.25rem;
+  font-size: 13.5px;
+  line-height: 1.688rem;
   letter-spacing: 0.06em;
+  margin: 0;
 }
 .portfolio-category {
-  font-size: 16px;
-  line-height: 1.875rem;
+  font-size: 12px;
+  line-height: 1.406rem;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin: 0;
 }
 
+.portfolio-card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.portfolio-card-description {
+  background-color: var(--brand-color);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 18px;
+  border-left: 1px solid var(--second-border-color);
+  border-bottom: 1px solid var(--second-border-color);
+  border-right: 1px solid var(--second-border-color);
+}
+/* end of portfolio */
+
+/* start of footer */
 .footer-part {
   background-color: var(--main-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 13.44%;
+  padding-right: 14.19%;
 }
 .white-text {
   color: var(--brand-color);
 }
 .footer-address {
-  font-size: 14px;
+  font-style: normal;
+  font-size: 10.5px;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
   color: var(--brand-color);
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-logo {
+  color: var(--active-color);
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 19.5px;
+  line-height: 2rem;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-right: 5.69%;
+  margin-bottom: 15px;
+  width: auto;
 }
 .footer-contacts {
-  font-size: 14px;
+  font-size: 10.5px;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
   color: var(--footer-contact-color);
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--active-color);
 }
+
+/* end of footer */
