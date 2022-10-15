@@ -14,10 +14,30 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--brand-color);
   color: var(--brand-text-color);
-  width: 1600px;
+}
+ul,
+li,
+a,
+nav,
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 13.44%;
+  padding-right: 14.19%;
   border-bottom: 1px var(--border-color);
 }
 
@@ -26,19 +46,42 @@ body {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 19.5px;
   line-height: 2rem;
   letter-spacing: 0.03em;
+  margin-right: 5.69%;
+  width: auto;
 }
 .dark-text {
   color: var(--logo-color);
 }
+nav {
+  width: 190.5px;
+  display: flex;
+}
 .headermenu {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 2;
+  padding: 0;
+  margin: 0;
+  gap: 18%;
+  width: 100%;
   list-style-type: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 10.5px;
   line-height: 1rem;
   letter-spacing: 0.02em;
+}
+.header-contacts-bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  gap: 3.12%;
+  flex-grow: 1;
+  width: auto;
+  margin-left: 23.31%;
+  margin-right: 0;
 }
 .headermenu-item {
   text-decoration: none;
@@ -54,7 +97,7 @@ body {
 }
 .header-contacts {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 10.5px;
   line-height: 1rem;
   letter-spacing: 0.02em;
   color: var(--text-color);
@@ -71,59 +114,92 @@ body {
 /* end of header */
 .main-div {
   background-color: var(--main-background-color);
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .main-title {
   color: var(--brand-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 3.75rem;
+  line-height: 2.813rem;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 22.5px;
+  flex-wrap: wrap;
+  width: 43.5%;
 }
 
 .maindiv-button {
   font-family: inherit;
   background: var(--active-color);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.875rem;
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--brand-color);
   cursor: pointer;
+  width: 12.5%;
+  height: 37.5px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
 }
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0;
+}
 .descriptionlist {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 22.5px;
+  margin: 0;
 }
 .descriptionlist-title {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 10.5px;
   line-height: 1rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 7.5px;
 }
 .descriptionlist-item {
-  font-size: 14px;
+  font-size: 10.5px;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  max-width: 202.5px;
+  margin: 0;
 }
 
 .subtitle {
   font-weight: 700;
-  font-size: 36px;
   line-height: 2.625rem;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 37.5px;
 }
 
 .whatwedo-list {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22.5px;
 }
 .ourteam {
   background: var(--subsection-background-color);
+}
+.ourteam-card {
+  display: flex;
+  /* flex-direction: column; */
 }
 .ourteam-list {
   list-style-type: none;
