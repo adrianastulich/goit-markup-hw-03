@@ -361,7 +361,17 @@ nav {
   margin-bottom: 20px;
   width: auto;
 }
-.footer-contacts {
+.footer-contacts-mail {
+  font-size: 14px;
+  line-height: 1.5rem;
+  letter-spacing: 0.03em;
+  color: var(--footer-contact-color);
+  text-decoration: none;
+  margin: 0;
+  margin-bottom: 9px;
+  padding: 0;
+}
+.footer-contacts-phone {
   font-size: 14px;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
